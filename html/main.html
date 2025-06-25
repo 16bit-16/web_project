@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>re:new</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="shortcut icon" href="../image/icon.png">
+</head>
+<body onload="openPopup()">
+    <header>
+        <div class="up_bar"> <!-- 로고 + 로그인/회원가입 -->
+            <a href="main.html">
+                <img src="../image/re_new.png" alt="logo">
+            </a>
+            <ul>
+                <li>로그인</li>
+                <li>|</li>
+                <li>회원가입</li>
+            </ul>
+        </div>
+        <div class="down_bar">
+            <ul>
+                <li>지속가능성</li>
+                <li>연구자료</li>
+                <li><a class="selbtn" href="#" onclick="loadPage('sub2.html')">재품구매</a></li>
+                <li><a class="selbtn" href="#" onclick="loadPage('sub3.html')">관련회사</a></li>
+                <li>회사소개</li>
+            </ul>
+        </div>
+    </header>
+    <iframe id="contentFrame" src="../html/sub1.html" width="100%" style="border:none;"></iframe>
+    <script src="../js/main.js"></script>
+    <script>
+        window.addEventListener('message', function (event) {
+            if (event.data.type === 'resize') {
+                const iframe = document.getElementById('contentFrame');
+                iframe.style.height = event.data.height + 'px';
+            }
+        });
+    </script>
+    
+</body>
+</html>
