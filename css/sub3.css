@@ -60,3 +60,14 @@ footer { /* footer */
     align-items: center;
     font-family: "IBM Plex Sans KR";
 }
+
+@media screen and (max-width: 768px) {
+    table {
+        width: 90%;
+        font-size: smaller;
+        padding: 20px 0;
+    }
+    th, td {
+        padding: 4px 8px;
+    }
+}

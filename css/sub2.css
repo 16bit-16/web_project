@@ -70,3 +70,14 @@ footer { /* footer */
     align-items: center;
     font-family: "IBM Plex Sans KR";
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .box {
+        width: 90%;
+        margin: 10px;
+    }
+}    

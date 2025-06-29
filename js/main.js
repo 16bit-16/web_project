@@ -14,3 +14,9 @@ function openPopup() {
         alert('팝업이 차단되어 있습니다. 팝업 차단을 해제해 주세요.');
     }
 }
+
+function login(event) {
+    event.preventDefault(); // 기본 form 제출 막기
+    window.location.href = "../html/main.html"; // 원하는 경로로 이동
+    alert("로그인이 완료되었습니다!");
+}

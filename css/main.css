@@ -33,6 +33,11 @@ header {
     cursor: pointer;
 }
 
+.up_bar ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
 .down_bar > ul { /* 메뉴 */
     border-top: 1px solid rgb(0, 0, 0);
     border-bottom: 1px solid rgb(0, 0, 0);
@@ -137,4 +142,52 @@ footer { /* footer */
     justify-content: center;
     align-items: center;
     font-family: "IBM Plex Sans KR";
+}
+
+@media screen and (max-width: 768px) {
+    .up_bar ul {
+        float: none;
+        display: flex;
+        justify-content: right;
+        padding: 5px 0;
+    }
+    .down_bar > ul {
+        flex-direction: column;
+        height: auto;
+    }
+    .second_nav {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+    }
+    .second_nav img {
+        width: 100%;
+    }
+    .overlay_text {
+        font-size: x-large;
+        padding: 10px;
+        text-align: left;
+    }
+    .third_nav {
+        height: max-content;
+    }
+    .third_text {
+        margin-top: 2em;
+        height: max-content;
+    }
+    .video iframe {
+        width: 90%;
+        height: auto;
+    }
+    html, body {
+        height: 100%;
+    }
+    .wrapper {
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .all {
+        flex: 1;
+    }
 }
