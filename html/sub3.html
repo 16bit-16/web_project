@@ -4,18 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- 관련 회사 정보 테이블용 스타일시트 로드 -->
     <link rel="stylesheet" href="../css/sub3.css">
 </head>
 <body>
-    <!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/sub3.css">
-</head>
-<body>
+
+    <!-- ===== 관련 친환경 패션 회사 리스트 테이블 ===== -->
     <table>
         <thead>
             <tr>
@@ -27,6 +22,7 @@
             </tr>
         </thead>
         <tbody>
+            <!-- 각 기업별 테이블 행 -->
             <tr>
                 <td>Patagonia</td>
                 <td>이본 쉬나드 (Yvon Chouinard)</td>
@@ -39,7 +35,7 @@
                 <td>스텔라 맥카트니 (Stella McCartney)</td>
                 <td>2001년</td>
                 <td>영국🇬🇧</td>
-                <td>력셔리 패션 브랜드</td>
+                <td>럭셔리 패션 브랜드</td>
             </tr>
             <tr>
                 <td>Eileen Fisher</td>
@@ -81,7 +77,7 @@
                 <td>마리아 에리크슨 (Maria Erixon)</td>
                 <td>2001년</td>
                 <td>스웨덴</td>
-                <td>유기농 면 청바지, 제활용 데님</td>
+                <td>유기농 면 청바지, 재활용 데님</td>
             </tr>
             <tr>
                 <td>TOMS</td>
@@ -92,23 +88,21 @@
             </tr>
         </tbody>
     </table>
-</body>
-</html>
+
+    <!-- ===== 사이트 푸터 ===== -->
     <footer>
-        개인정보처리방침  |  저작권보호정책  |  이용약관  |  이메일주소무단수집거부  |  영상정보처리기기운영방침
-        <br>
-        연락처 | 010-1234-1234 (대표 이도건)
-        <br>
-        (43010) 대구광역시 달성군 구지면 창리로11길 93
-        <br>
+        개인정보처리방침  |  저작권보호정책  |  이용약관  |  이메일주소무단수집거부  |  영상정보처리기기운영방침<br>
+        연락처 | 010-1234-1234 (대표 이도건)<br>
+        (43010) 대구광역시 달성군 구지면 창리로11길 93<br>
         Copyright Daegu Future Education Research Institute All Rights Reserved.
     </footer>
+
+    <!-- ===== iframe 높이 자동 조절 스크립트 ===== -->
     <script>
         function resizeIframe() {
             const height = document.body.scrollHeight;
             parent.postMessage({ type: 'resize', height }, '*');
         }
-    
         window.addEventListener('load', resizeIframe);
         window.addEventListener('resize', resizeIframe);
     </script>
