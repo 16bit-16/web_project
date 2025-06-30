@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- 공통 스타일시트 로드 -->
     <link rel="stylesheet" href="../css/main.css">
 </head>
 <body>
     <div class="wrapper">
+
+        <!-- 콘텐츠 전체 영역 -->
         <div class="all">
+
+            <!-- 첫 번째 섹션: 지속가능한 패션 정의 및 메시지 -->
             <nav class="first_nav">
                 <div class="overlay_text">
                     "지속가능한 패션(Sustainable Fashion)"은 <br>
@@ -19,10 +25,18 @@
                     지속 가능한 방식으로 전환하는 것을 목표로 합니다. <br>
                 </div>
             </nav>
+
+            <!-- 두 번째 섹션: 영상 콘텐츠 및 설명 텍스트 -->
             <nav class="video">
-                <iframe width="1120" height="630" src="https://www.youtube.com/embed/3oZlJAjPQ7E?si=npud_5dbfn4bIpOx&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <p>MBCNEWS - 2024년 3월 24일자 뉴스</p>
+                <iframe width="1120" height="630" src="https://www.youtube.com/embed/3oZlJAjPQ7E?si=npud_5dbfn4bIpOx&autoplay=1&mute=1" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                    encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+                <p>MBCNEWS - 2024년 3월 24일자 뉴스</p>
             </nav>
+
+            <!-- 세 번째 섹션: 의류 산업의 환경 영향 관련 설명 -->
             <nav class="second_nav">
                 <div class="second_text">
                     섬유업계가 배출하고 있는 온실가스 배출량은 <br>
@@ -30,34 +44,32 @@
                     매년 600만톤의 의류폐기물이 발생하고 있고, <br>
                     이 가운데 재활용 되는 비중은 4분의 1에 불과하다.
                 </div>
-                <img src="../image/cloth_mountain.jpg" alt="cloth_mountain">
+                <img src="../image/cloth_mountain.jpg" alt="의류 쓰레기 더미 이미지">
             </nav>
+
+            <!-- 네 번째 섹션: 지속 가능한 패션을 촉구하는 문구 -->
             <nav class="third_nav">
                 <div class="third_text">
-                    “우리가 오늘 입는 옷은 단순한 선택이 아닙니다.
-                    <br>
-                    그것은 환경을 보호하고, 사람을 존중하며, 미래를 지키는 약속입니다.
-                    <br>
-                    지속 가능한 패션은 더 적게 만들고, 더 오래 입으며,
-                    <br>
-                    더 나은 세상을 향해 가는 가장 아름다운 소비입니다.
-                    <br>
-                    작은 변화가 큰 내일을 만듭니다.
-                    <br>
+                    “우리가 오늘 입는 옷은 단순한 선택이 아닙니다.<br>
+                    그것은 환경을 보호하고, 사람을 존중하며, 미래를 지키는 약속입니다.<br>
+                    지속 가능한 패션은 더 적게 만들고, 더 오래 입으며,<br>
+                    더 나은 세상을 향해 가는 가장 아름다운 소비입니다.<br>
+                    작은 변화가 큰 내일을 만듭니다.<br>
                     우리는 옷으로 세상을 바꿀 수 있습니다.”
                 </div>
             </nav>
         </div>
+
+        <!-- 하단 푸터: 연락처 및 저작권 정보 -->
         <footer>
-            개인정보처리방침  |  저작권보호정책  |  이용약관  |  이메일주소무단수집거부  |  영상정보처리기기운영방침
-            <br>
-            연락처 | 010-1234-1234 (대표 이도건)
-            <br>
-            (43010) 대구광역시 달성군 구지면 창리로11길 93
-            <br>
+            개인정보처리방침  |  저작권보호정책  |  이용약관  |  이메일주소무단수집거부  |  영상정보처리기기운영방침<br>
+            연락처 | 010-1234-1234 (대표 이도건)<br>
+            (43010) 대구광역시 달성군 구지면 창리로11길 93<br>
             Copyright Daegu Future Education Research Institute All Rights Reserved.
         </footer>
     </div>
+
+    <!-- iframe 높이 자동 조절 스크립트 -->
     <script>
         function resizeIframe() {
             const height = document.body.scrollHeight;

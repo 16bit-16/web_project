@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>re:new</title>
+    <!-- 메인 스타일시트 및 파비콘 로드 -->
     <link rel="stylesheet" href="../css/main.css">
     <link rel="shortcut icon" href="../image/icon.png">
 </head>
 <body onload="openPopup()">
+
+    <!-- ===== 헤더 영역 시작 ===== -->
     <header>
-        <div class="up_bar"> <!-- 로고 + 로그인/회원가입 -->
+        <div class="up_bar"> <!-- 로고 및 로그인/회원가입 메뉴 -->
             <a href="main.html">
                 <img src="../image/re_new.png" alt="logo">
             </a>
@@ -19,7 +22,8 @@
                 <li><a href="../html/login.html">회원가입</a></li>
             </ul>
         </div>
-        <div class="down_bar">
+
+        <div class="down_bar"> <!-- 네비게이션 메뉴 -->
             <ul>
                 <li>지속가능성</li>
                 <li>연구자료</li>
@@ -29,9 +33,15 @@
             </ul>
         </div>
     </header>
+    <!-- ===== 헤더 영역 끝 ===== -->
+
+    <!-- ===== 콘텐츠 영역: iframe으로 서브 페이지 로딩 ===== -->
     <iframe id="contentFrame" src="../html/sub1.html" width="100%" style="border:none;"></iframe>
+
+    <!-- ===== 스크립트 영역 ===== -->
     <script src="../js/main.js"></script>
     <script>
+        // 자식 iframe에서 전달된 메시지를 통해 높이를 동적으로 조정함
         window.addEventListener('message', function (event) {
             if (event.data.type === 'resize') {
                 const iframe = document.getElementById('contentFrame');
